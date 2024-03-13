@@ -1,6 +1,8 @@
 let apiQuotes = {}
 
 const quoteText = document.getElementById('quote-text')
+const nextBtn = document.getElementById('next-btn')
+
 
 async function getQuote() {
     try {
@@ -13,6 +15,9 @@ async function getQuote() {
         console.log('Err in getQuote', e)
     }
 }
+
+// Event Listener 
+nextBtn.addEventListener('click', getQuote)
 
 // onLoad
 getQuote()
