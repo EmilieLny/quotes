@@ -39,9 +39,15 @@ body {
   gap: 5px;
 }
 
-.containe button {
+.containe .btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.containe .btns button {
   font-family: Montserrat, sans-serif;
-  margin: auto;
   padding: 5px;
   width: 150px;
   border-radius: 12px;
@@ -55,7 +61,7 @@ body {
     rgba(0, 212, 255, 1) 100%
   );
 }
-.containe button:hover {
+.containe .btns button:hover {
   cursor: pointer;
   background: rgb(2, 0, 36);
   background: linear-gradient(
@@ -64,6 +70,12 @@ body {
     rgba(9, 9, 121, 1) 71%,
     rgba(0, 212, 255, 1) 100%
   );
+}
+
+.containe .btns button.next-btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .containe .signature {
